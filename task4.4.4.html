@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // task task 4.4.4
+
+            let calculator = {
+                read() {
+                    this.a = +prompt('Введите первое число ', 0);
+                    this.b = +prompt('Введите вотрое  число ', 0);
+                },
+                sum() {
+                    return this.a + this.b
+                },
+
+                mull() {
+                    return this.a * this.b
+                },
+
+            };
+
+            calculator.read();
+            alert(calculator.sum());
+            alert(calculator.mull());
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>

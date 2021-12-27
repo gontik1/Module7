@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // task 4.1.1
+
+            // let user = {
+            //   name: 'John',
+            //   surname: 'Smith',
+            // };
+            // name = 'Pete';
+            // delete user.name ;
+            // for(let key in user){
+            //   alert(key);
+            //   alert(user[key])
+            // }
+
+
+            // task 4.1.2
+
+            // function isEmpty(obj){
+            //     for (let key in obj) {
+            //     return false;
+            //   }
+            //   return true;
+            // }
+
+            // let schedule = {};
+
+            // alert( isEmpty(schedule) );
+
+            // schedule["8:30"] = "get up";
+
+            // alert( isEmpty(schedule) );
+
+
+            // task 4.1.4
+
+            let salaries = {
+                John: 100,
+                Ann: 160,
+                Pete: 130
+            };
+
+            let sum = 0;
+            for (let key in salaries) {
+                sum += salaries[key];
+            };
+
+            alert(sum);
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>

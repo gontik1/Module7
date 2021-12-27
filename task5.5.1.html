@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // task 5.5.1
+
+            function camelize(str) {
+                return str
+                    .split('-')
+                    .map(
+                        (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+                    )
+                    .join('');
+            }
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>

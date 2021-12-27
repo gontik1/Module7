@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // task 5.4.2
+            // let stales = ['Джаз','Блюз'];
+            //   stales.push('Рок-н-ролл');
+            //   styles[Math.floor((styles.length - 1) / 2)] = "Классика";
+            //   alert(stales.shift());
+            //   styles.unshift("Рэп", "Регги");
+
+
+
+            // task 5.4.4
+
+            function sumInput() {
+
+                let numbers = [];
+
+                while (true) {
+                    let value = prompt("Введите число", 0);
+
+
+                    if (value === "" || value === null || !isFinite(value)) break;
+                    numbers.push(+value);
+                }
+
+                let sum = 0;
+                for (let number of numbers) {
+                    sum += number;
+                }
+                return sum;
+            }
+            alert(sumInput());
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>

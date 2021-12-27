@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // //  task 5.3.1, 
+            // function ucFirst(str) {
+            //   if (!str) return str;
+
+            //   return str[0].toUpperCase() + str.slice(1);
+            // }
+
+            // alert( ucFirst("вася") );
+
+
+            //  task 5.3.2
+
+            function checkSpam(str) {
+                let lowerStr = str.toLowerCase();
+
+                return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+            }
+            alert(checkSpam('buy ViAgRA now'));
+            alert(checkSpam('free xxxxx'));
+            alert(checkSpam("innocent rabbit"));
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>

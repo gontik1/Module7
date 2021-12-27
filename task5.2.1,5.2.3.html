@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // // Task 5.2.1
+            // let a = +prompt("Введите первое число", 0);
+            // let b = +prompt("Введите второе число", 0);
+
+            // alert( a + b )
+
+
+
+            // Task 5.2.3
+
+            function readNumber() {
+                let num;
+
+                do {
+                    num = prompt("Введите число", 0);
+                } while (!isFinite(num));
+
+                if (num === null || num === '') return null;
+
+                return +num;
+            }
+
+            alert(`${readNumber()}`);
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>

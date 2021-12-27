@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script>
+        // 1 задание
+            function myFunction(a, b) {
+                return a < b ? a / b : a * b
+            }
+
+
+            // 2 задание
+            function myFunction(num) {
+                return Math.round((num + Number.EPSILON) * 100) / 100
+            }
+
+            // 3 задание
+
+            function myFunction(arr) {
+                return arr.sort((a, b) => b - a);
+            }
+
+
+            // 4 задание
+
+            function myFunction(arr, n) {
+                arr = arr.slice(-n,)
+                return arr
+            }
+
+            // 5 задание
+
+            function myFunction(user) {
+                let res = {};
+                for (let key in user) {
+
+                    if (user[key] === ' ') {
+                        res[key] = null
+                    } else if (user[key] === '') {
+                        res[key] = null
+                    } else {
+                        res[key] = user[key];
+                    }
+                }
+                return res
+            }
+    </script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+</body>
+
+</html>
